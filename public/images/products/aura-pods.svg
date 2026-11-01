@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad-aura-pods" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040714" />
+      <stop offset="50%" stop-color="#070E22" />
+      <stop offset="100%" stop-color="#09132C" />
+    </linearGradient>
+
+    <!-- Center Radial Glow -->
+    <radialGradient id="glow-aura-pods" cx="50%" cy="48%" r="45%">
+      <stop offset="0%" stop-color="rgba(59, 130, 246, 0.4)" />
+      <stop offset="70%" stop-color="rgba(7, 14, 34, 0)" />
+    </radialGradient>
+
+    <!-- Technical Grid Pattern -->
+    <pattern id="grid-aura-pods" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+      <circle cx="0" cy="0" r="1.5" fill="rgba(255, 255, 255, 0.15)" />
+    </pattern>
+  </defs>
+
+  <!-- Deep Slate Background -->
+  <rect width="800" height="800" fill="url(#bg-grad-aura-pods)" />
+  <rect width="800" height="800" fill="url(#grid-aura-pods)" />
+
+  <!-- Ambient Glow Behind Hardware -->
+  <circle cx="400" cy="380" r="320" fill="url(#glow-aura-pods)" />
+
+  <!-- Concentric Telemetry Target Rings -->
+  <circle cx="400" cy="380" r="330" fill="none" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.15" stroke-dasharray="6 6" />
+  <circle cx="400" cy="380" r="270" fill="none" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.2" />
+  <circle cx="400" cy="380" r="180" fill="none" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.1" />
+
+  <!-- Corner Calibration Targets -->
+  <g stroke="#3B82F6" stroke-width="1.5" stroke-opacity="0.4">
+    <!-- Top Left -->
+    <path d="M 40 60 L 40 40 L 60 40" fill="none" />
+    <!-- Top Right -->
+    <path d="M 760 60 L 760 40 L 740 40" fill="none" />
+    <!-- Bottom Left -->
+    <path d="M 40 740 L 40 760 L 60 760" fill="none" />
+    <!-- Bottom Right -->
+    <path d="M 760 740 L 760 760 L 740 760" fill="none" />
+  </g>
+
+  <!-- Top Technical Header -->
+  <g font-family="monospace">
+    <text x="50" y="55" fill="#3B82F6" font-size="11" font-weight="bold" letter-spacing="2">NEXORA PRECISION LABS • 3D SPECIMEN</text>
+    <text x="750" y="55" fill="#94A3B8" font-size="11" text-anchor="end" letter-spacing="1">REF: AURA-PODS.SVG</text>
+  </g>
+
+  <!-- Hardware Silhouette Element -->
+  
+      <!-- Audio Headphone Silhouette -->
+      <g transform="translate(200, 150)">
+        <!-- Headband Arc -->
+        <path d="M 60 220 A 140 140 0 0 1 340 220" fill="none" stroke="#3B82F6" stroke-width="16" stroke-linecap="round" />
+        <path d="M 60 220 A 140 140 0 0 1 340 220" fill="none" stroke="#060C1B" stroke-width="6" stroke-linecap="round" />
+        <!-- Yokes -->
+        <path d="M 60 220 L 60 270" stroke="#3B82F6" stroke-width="8" stroke-linecap="round" />
+        <path d="M 340 220 L 340 270" stroke="#3B82F6" stroke-width="8" stroke-linecap="round" />
+        <!-- Left Ear Cup -->
+        <rect x="20" y="250" width="75" height="140" rx="36" fill="#070E22" stroke="#3B82F6" stroke-width="4" />
+        <circle cx="58" cy="320" r="26" fill="#0B1736" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2" />
+        <!-- Right Ear Cup -->
+        <rect x="305" y="250" width="75" height="140" rx="36" fill="#070E22" stroke="#3B82F6" stroke-width="4" />
+        <circle cx="342" cy="320" r="26" fill="#0B1736" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2" />
+        <!-- Sound Waves -->
+        <path d="M 10 300 Q -15 320 10 340" fill="none" stroke="#3B82F6" stroke-width="2" stroke-opacity="0.5" />
+        <path d="M 390 300 Q 415 320 390 340" fill="none" stroke="#3B82F6" stroke-width="2" stroke-opacity="0.5" />
+      </g>
+    
+
+  <!-- Bottom Technical Overlay Card -->
+  <g transform="translate(60, 680)">
+    <rect x="0" y="0" width="680" height="66" rx="12" fill="#060C1B" fill-opacity="0.9" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    <!-- Indicator Pill -->
+    <rect x="18" y="16" width="8" height="34" rx="4" fill="#3B82F6" />
+    <!-- Unit Name and Perspective -->
+    <text x="38" y="34" fill="#FFFFFF" font-family="monospace" font-size="14" font-weight="bold" letter-spacing="1">AURA ACOUSTIC PODS PRO</text>
+    <text x="38" y="52" fill="#94A3B8" font-family="monospace" font-size="11" letter-spacing="0.5">TRUE BALANCED ARMATURE • ACTIVE CANCEL</text>
+    <!-- Angle Tag -->
+    <rect x="520" y="18" width="144" height="28" rx="6" fill="#0D1936" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.5" />
+    <text x="592" y="36" fill="#3B82F6" font-family="monospace" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="1">MICRO-ACOUSTIC RESONANCE POD</text>
+  </g>
+</svg>
